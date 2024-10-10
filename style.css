@@ -23,7 +23,7 @@ h1 {
     font-size: 63px !important;
 }
 
-h2,span, p {
+h2,span, p, h5  {
     font-family: "Jost", sans-serif !important;
 }
 .cards-bg-img-1{
