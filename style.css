@@ -5,23 +5,38 @@
     width: 220px;
 }
 
+.btn-heart {
+    width: 50px;
+    height: 50px;
+}
+
 .hero-section {
     background-image: url('/imgs/bg-img-1.jpg');
     background-size: cover;
-    background-position: center;
-    height: 100vh; 
+    height: 100vh;
 }
-
+.bg-h{
+    height: 170px !important;
+}
 h1 {
     font-family: "Merriweather Sans", sans-serif;
-    color: #53741e !important;
     font-size: 63px !important;
 }
 
-h2 {
-    font-family: "Jost", sans-serif;
+h2,span, p {
+    font-family: "Jost", sans-serif !important;
+}
+.cards-bg-img-1{
+ background-image: url(/imgs/apple-img.jpg);
+    background-position: center;
 }
 
-button {
-    font-family: "Jost", sans-serif;
+.cards-bg-img-2{
+ background-image: url(/imgs/banana-imgs.jpg);
+    background-position: center;
+}
+
+.cards-bg-img-3{
+ background-image: url(/imgs/cherry-imgs.jpg);
+    background-position: center;
 }
