@@ -10,33 +10,47 @@
     height: 50px;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 .hero-section {
     background-image: url('/imgs/bg-img-1.jpg');
     background-size: cover;
     height: 100vh;
 }
-.bg-h{
+
+.bg-h {
     height: 170px !important;
 }
+
 h1 {
     font-family: "Merriweather Sans", sans-serif;
     font-size: 63px !important;
 }
 
-h2,span, p, h5  {
+h2,
+span,
+p,
+h5 {
     font-family: "Jost", sans-serif !important;
 }
-.cards-bg-img-1{
- background-image: url(/imgs/apple-img.jpg);
+
+.cards-bg-img-1 {
+    background-image: url(/imgs/apple-img.jpg);
     background-position: center;
 }
 
-.cards-bg-img-2{
- background-image: url(/imgs/banana-imgs.jpg);
+.cards-bg-img-2 {
+    background-image: url(/imgs/banana-imgs.jpg);
     background-position: center;
 }
 
-.cards-bg-img-3{
- background-image: url(/imgs/cherry-imgs.jpg);
+.cards-bg-img-3 {
+    background-image: url(/imgs/cherry-imgs.jpg);
     background-position: center;
+}
+
+.bg-img-3 {
+    max-height: 400px;
 }
