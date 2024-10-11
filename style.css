@@ -24,8 +24,13 @@ h1 {
 h2,
 span,
 p,
-h5 {
+h5,
+label {
     font-family: "Jost", sans-serif !important;
+}
+
+.card-fixing{
+    margin: -60px !important;
 }
 
 

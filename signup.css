@@ -20,3 +20,6 @@ h2,span, p {
 h2,span, p {
     font-family: "Jost", sans-serif !important;
 }
+:hover input{
+    outline: none;
+}
