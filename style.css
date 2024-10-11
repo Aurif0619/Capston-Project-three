@@ -14,26 +14,45 @@ body {
     overflow-x: hidden;
 }
 
-.hero-section {
-    background-image: url('/imgs/bg-img-1.jpg');
-    background-size: cover;
-    height: 100vh;
-}
-
-.bg-h {
-    height: 170px !important;
-}
-
 h1 {
     font-family: "Merriweather Sans", sans-serif;
     font-size: 63px !important;
 }
+
+
 
 h2,
 span,
 p,
 h5 {
     font-family: "Jost", sans-serif !important;
+}
+
+
+.hero-section {
+    background-image: url('/imgs/bg-img-1.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.hero-section-2 {
+    background-image: url('/imgs/home-2.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.hero-section-3 {
+    background-image: url('/imgs/home-3.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+
+.cards-bg-img-3 {
+    height: 170px !important;
 }
 
 .cards-bg-img-1 {
