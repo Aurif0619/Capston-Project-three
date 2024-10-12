@@ -78,9 +78,8 @@
             </ul>
           </div>
         </div>
-
       </div>
-      <div class="navbar navbar-expand-lg navbar-light my-2">
+      <div class="navbar navbar-expand-lg navbar-light my-2 sticky-top">
         <div class="container-fluid">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -140,8 +139,8 @@
           <div class="container">
             <div class="row">
               <div class="col-lg-8">
-                <h1 class="fw-bolder text-success">Healthy Foods</h1>
-                <span class="pt-2 text-secondary fs-4">Your journey to a healthier life starts here.</span>
+                <h1 class="fw-bolder text-success">Healthy Food</h1>
+                <span class="pt-2 text-secondary fs-5 d-block">Your journey to a healthier life starts here.</span>
                 <div class="d-flex">
                   <div>
                     <button class="btn fw-bold mt-3 fs-5 text-secondary">Shop Now</button>
@@ -207,17 +206,17 @@
     </div>
     <button class="carousel-control-prev rounded-circle position-absolute top-50 translate-middle-y" type="button"
       data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-      <div class="bg-black aerrow-color px-3 py-2 rounded-circle mt-5 me-4">
+      <div class="bg-black px-3 py-2 rounded-circle mt-5 me-4 d-none d-md-block">
         <span class="px-0 my-3 text-white fs-4 ">
-          <iconify-icon icon="teenyicons:arrow-right-solid" class="mt-2"></iconify-icon>
+          <iconify-icon icon="teenyicons:arrow-left-solid" class="mt-2"></iconify-icon>
       </div>
       <span class="visually-hidden">Previous</span>
     </button>
     <button class="carousel-control-next px-3 py-2 rounded-circle position-absolute top-50 translate-middle-y"
       type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-      <div class="bg-black px-3 py-2 rounded-circle mt-5">
+      <div class="bg-black px-3 py-2 rounded-circle mt-5 d-none d-md-block">
         <span class="px-0 my-2 text-white fs-4">
-          <iconify-icon icon="teenyicons:arrow-left-solid" class="mt-2"></iconify-icon>
+          <iconify-icon icon="teenyicons:arrow-right-solid" class="mt-2"></iconify-icon>
       </div>
       </span>
       <span class="visually-hidden">Next</span>
@@ -226,48 +225,58 @@
 
   <div class="container">
     <div class="card-fixing">
-      <div class="row justify-content-between ">
+      <div class="row justify-content-between mx-5">
         <div class="col-lg-4 col-md-6 mb-3">
-          <div class="card cards-bg-img-1 h-100 z-3">
+          <div class="card cards-bg-img-1 cards-bg-fix card-img h-100 z-3">
             <div class="card-body mt-4">
               <span class="card-title d-block fs-5 text-secondary">Up to 70% discount</span>
               <div class="d-flex">
-                <div><button class="btn mb-1 text-secondary">Shop Now</div>
-                <div class="d-flex mt-2">
-                  <span class="border-4 text-secondary fs-4 rounded-5 border-dark"><iconify-icon
-                      icon="solar:arrow-right-linear"></iconify-icon></span>
+                <div>
+                  <button class="btn mb-1 text-secondary">Shop Now</button>
                 </div>
-                </button>
+                <div class="d-flex mt-2">
+                  <span class="border-4 text-secondary fs-4 rounded-5 border-dark">
+                    <iconify-icon icon="solar:arrow-right-linear"></iconify-icon>
+                  </span>
+                </div>
               </div>
             </div>
           </div>
         </div>
+
+        <!-- Card 2 -->
         <div class="col-lg-4 col-md-6 mb-3">
-          <div class="card cards-bg-img-2 h-100 z-3">
+          <div class="card cards-bg-img-2 cards-bg-fix card-img h-100 z-3">
             <div class="card-body mt-4">
               <span class="card-title fs-5 text-secondary">Up to 70% discount</span>
               <div class="d-flex">
-                <div><button class="btn mt-0 text-secondary">Shop Now</div>
-                <div class="d-flex mt-2">
-                  <span class="border-4 text-secondary fs-4 rounded-5 border-dark"><iconify-icon
-                      icon="solar:arrow-right-linear"></iconify-icon></span>
+                <div>
+                  <button class="btn mt-0 text-secondary">Shop Now</button>
                 </div>
-                </button>
+                <div class="d-flex mt-2">
+                  <span class="border-4 text-secondary fs-4 rounded-5 border-dark">
+                    <iconify-icon icon="solar:arrow-right-linear"></iconify-icon>
+                  </span>
+                </div>
               </div>
             </div>
           </div>
         </div>
+
+        <!-- Card 3 (Cherry Card) -->
         <div class="col-lg-4 col-md-6 mb-3">
-          <div class="card cards-bg-img-3 z-3">
+          <div class="card cards-bg-img-3 cards-bg-fix card-img h-100 z-3">
             <div class="card-body mt-4">
               <span class="card-title fs-5 text-secondary">Up to 70% discount</span>
               <div class="d-flex">
-                <div><button class="btn mt-0 text-secondary">Shop Now</div>
-                <div class="d-flex mt-2">
-                  <span class="border-4 text-secondary fs-4 rounded-5 border-dark"><iconify-icon
-                      icon="solar:arrow-right-linear"></iconify-icon></span>
+                <div>
+                  <button class="btn mt-0 text-secondary">Shop Now</button>
                 </div>
-                </button>
+                <div class="d-flex mt-2">
+                  <span class="border-4 text-secondary fs-4 rounded-5 border-dark">
+                    <iconify-icon icon="solar:arrow-right-linear"></iconify-icon>
+                  </span>
+                </div>
               </div>
             </div>
           </div>
@@ -275,6 +284,7 @@
       </div>
     </div>
   </div>
+
   </div>
 
   </div>
@@ -820,7 +830,6 @@
                 <span class="text-secondary fw-bold">January 12, 2021</span>
               </div>
             </div>
-            <!-- Hiding the Control Buttons for this Section -->
             <button class="carousel-control-prev d-none" type="button" data-bs-target="#postsCarousel"
               data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -859,7 +868,13 @@
       </div>
     </div>
   </div>
-
+  <div class="d-flex justify-content-end me-4 pe-2 sticky-bottom">
+    <button class="btn bg-success px-4 rounded-3 py-3 my-2" id="sticky-btn">
+      <span class="text-white fs-4">
+        <iconify-icon icon="cil:arrow-top" class="mt-2"></iconify-icon>
+      </span>
+    </button>
+  </div>
 
   <!-- footer section -->
   <footer class="py-5 bg-light">
@@ -884,7 +899,7 @@
             <p class="text-secondary fs-5">sales@naturally.com</p>
           </div>
         </div>
-        <div class="col-md-6 col-sm-12 mt-3">
+        <div class="col-md-6 col-sm-12">
           <span class="mb-3 fs-3">Sign Up & Save</span>
           <p class="text-secondary fs-5 mt-2">Get exclusive offers, free shipping events & <br> more by signing up for
             our promotional <br>
@@ -901,15 +916,15 @@
               <span class="text-white fs-5"><iconify-icon icon="brandico:facebook"
                   class="pt-1 pt-0 fs-3"></iconify-icon></span>
             </button>
-            <button class="btn btn-outline-secondary py-2 rounded-circle bg-secondary mx-2">
+            <button class="btn btn-outline-secondary py-2 rounded-circle bg-secondary mx-3">
               <span class="text-white fs-5"><iconify-icon icon="akar-icons:twitter-fill"
                   class="pt-1 pt-0 fs-3"></iconify-icon></span>
             </button>
-            <button class="btn btn-outline-secondary py-2 rounded-circle bg-secondary mx-2">
+            <button class="btn btn-outline-secondary py-2 rounded-circle bg-secondary mx-3">
               <span class="text-white fs-5"><iconify-icon icon="akar-icons:instagram-fill"
                   class="pt-1 pt-0 fs-3"></iconify-icon></span>
             </button>
-            <button class="btn btn-outline-secondary py-2 rounded-circle bg-secondary mx-2">
+            <button class="btn btn-outline-secondary py-2 rounded-circle bg-secondary mx-3">
               <span class="text-white fs-5"><iconify-icon icon="vaadin:youtube"
                   class="pt-1 pt-0 fs-3"></iconify-icon></span>
             </button>
@@ -917,20 +932,23 @@
         </div>
       </div>
       <hr class="my-4">
-      <div class="d-flex justify-content-between mx-0">
-        <div>
-          <p class="text-secondary">
-            Naturally All rights reserved by Ninethme.
-          </p>
-        </div>
-        <div class="d-flex justify-content-center">
-          <a href="#" class="mx-2 text-decoration-none fw-semibold text-success">Privacy Policy</a>
-          <a href="#" class="mx-2 text-decoration-none fw-semibold text-success">Shop</a>
-          <a href="#" class="mx-2 text-decoration-none fw-semibold text-success">Blog</a>
+      <div class="col-12">
+        <div class="d-flex flex-column flex-sm-row justify-content-between mx-0">
+          <div class="mb-2 d-flex justify-content-center">
+            <p class="text-secondary tex-center mb-0">
+              Naturally All rights reserved by Ninethme.
+            </p>
+          </div>
+          <div class="d-flex justify-content-center">
+            <a href="#" class="mx-2 text-decoration-none fw-semibold text-success">Privacy Policy</a>
+            <a href="#" class="mx-2 text-decoration-none fw-semibold text-success">Shop</a>
+            <a href="#" class="mx-2 text-decoration-none fw-semibold text-success">Blog</a>
+          </div>
         </div>
       </div>
     </div>
   </footer>
+
 
   <!-- offcanvas -->
   <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">

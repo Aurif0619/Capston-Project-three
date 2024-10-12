@@ -22,15 +22,17 @@ h1 {
 h2,
 span,
 p,
-h5,
-label {
+h5 {
     font-family: "Jost", sans-serif !important;
 }
 
 .card-fixing {
-    margin: -60px !important;
+    margin: -50px !important;
 }
 
+.cards-bg-fix {
+    min-height: 200px;
+}
 
 .hero-section {
     background-image: url('/imgs/bg-img-1.jpg');
@@ -50,29 +52,20 @@ label {
     background-image: url('/imgs/home-3.jpg');
     background-size: cover;
     background-position: center;
-    height: 100vh;
-}
-
-
-.cards-bg-img-3 {
-    height: 170px !important;
+    height: 100vh ;
 }
 
 .cards-bg-img-1 {
-    background-image: url(/imgs/apple-img.jpg);
+    background-image: url(/imgs/apple-img.png);
     background-position: center;
 }
 
 .cards-bg-img-2 {
-    background-image: url(/imgs/banana-imgs.jpg);
+    background-image: url(/imgs/banana-img.png);
     background-position: center;
 }
 
 .cards-bg-img-3 {
-    background-image: url(/imgs/cherry-imgs.jpg);
+    background-image: url(/imgs/cherry-img.png);
     background-position: center;
-}
-
-.bg-img-3 {
-    max-height: 400px;
 }
