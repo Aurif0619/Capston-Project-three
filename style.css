@@ -19,8 +19,6 @@ h1 {
     font-size: 63px !important;
 }
 
-
-
 h2,
 span,
 p,
@@ -29,7 +27,7 @@ label {
     font-family: "Jost", sans-serif !important;
 }
 
-.card-fixing{
+.card-fixing {
     margin: -60px !important;
 }
 
