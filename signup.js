@@ -1,9 +1,7 @@
-document.getElementById("signUpForm").addEventListener("submit", function (event) {
+document.querySelector(".signUpForm").addEventListener("submit", function (event) {
     event.preventDefault();
-    console.log("working");
 
     let userEmail = document.getElementById("userEmail").value;
-
     let userPassword = document.getElementById("userPassword").value;
 
     console.log(userEmail, userPassword);
@@ -16,5 +14,4 @@ document.getElementById("signUpForm").addEventListener("submit", function (event
 
         window.location.href = "./login.html";
     }
-
 });
