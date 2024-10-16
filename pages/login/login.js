@@ -9,7 +9,7 @@ document.querySelector(".loginForm").addEventListener("submit", function (event)
 
     if (userEmailLogin === storedEmail && userPasswordLogin === storedPassword) {
         alert('Welcome to the Home page');
-        window.location.href = "./index.html";
+        window.location.href = "/index.html";
     } else {
         alert('Something went wrong!');
     }

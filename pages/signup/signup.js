@@ -13,6 +13,6 @@ document.querySelector(".signUpForm")
             localStorage.setItem("password", userPassword);
 
             alert("Sign Up Successful!");
-            window.location.href = "./login.html";
+            window.location.href="/pages/login/login.html"
         }
     });

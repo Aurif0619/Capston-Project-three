@@ -11,8 +11,16 @@
 }
 
 h1 {
-    font-family: "Merriweather Sans", sans-serif;
+    font-family: "Merriweather Sans", sans-serif !important;
     font-size: 63px !important;
+}
+
+.text {
+    color: #364A15;
+}
+
+.text-color {
+    color: #9A6C1D !important;
 }
 
 h2,

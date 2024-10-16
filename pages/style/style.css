@@ -18,11 +18,12 @@ h1 {
   font-family: "Merriweather Sans", sans-serif;
   font-size: 63px !important;
 }
-
+.text {
+  color: #364A15;
+}
 h2,
 span,
-p,
-h5 {
+p{
   font-family: "Jost", sans-serif !important;
 }
 
@@ -33,41 +34,33 @@ h5 {
 .cards-bg-fix {
   min-height: 200px;
 }
+
 .hero-section {
-  background-image: url("/imgs/bg-img-1.jpg");
-  background-size: cover;
-  background-position: center;
+  background-image: url(/imgs/bg-img-1.jpg);
   height: 100vh;
 }
 
 .hero-section-2 {
   background-image: url("/imgs/home-2.jpg");
-  background-size: cover;
-  background-position: center;
   height: 100vh;
+}
+.price{
+ color: #9A6C1D !important;
 }
 
 .hero-section-3 {
   background-image: url("/imgs/home-3.jpg");
-  background-size: cover;
-  background-position: center;
   height: 100vh;
 }
 
 .cards-bg-img-1 {
   background-image: url(/imgs/apple-img.png);
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 .cards-bg-img-2 {
   background-image: url(/imgs/banana-img.png);
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 .cards-bg-img-3 {
   background-image: url(/imgs/cherry-img.png);
-  background-position: center;
-  background-repeat: no-repeat;
 }
