@@ -97,7 +97,7 @@
                 <a class="nav-link ms-3 fs-5 text-dark" href="#">Pages</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link fs-5 text-dark" href="#">Shop</a>
+                <a class="nav-link fs-5 text-dark ms-3" href="#">Shop</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link text-dark fs-5 mx-3" href="#">Blog</a>
@@ -306,7 +306,7 @@
           <div class="badge bg-info text-white position-absolute" style="top: 10px; left: 10px;">Best</div>
           <img src="/imgs/graps.png" class="card-img-top img-fluid" alt="Organic Grape">
           <div class="card-body">
-            <button class="border-0 px-3 py-1 rounded-5" >N-Farm</button>
+            <button class="border-0 px-3 py-1 rounded-5">N-Farm</button>
             <h5 class="mt-5">Organic Grape</h5>
             <p class="card-text text-secondary"><s>$14.40</s> <strong>$12.40</strong></p>
             <div class="container">
@@ -456,7 +456,6 @@
       </div>
     </div>
   </div>
-
 
   <!-- 2nd cards section  -->
 
@@ -778,7 +777,7 @@
       <div class="row justify-content-between align-items-center py-4">
         <div class="col-md-5">
           <h5 class="text-success fs-4">Testimonials</h5>
-          <div id="testimonialsCarousel" class="carousel slide mt-4" data-bs-ride="carousel" data-bs-interval="2500">
+          <div id="testimonialsCarousel" class="carousel slide mt-4" data-bs-ride="carousel" data-bs-interval="2000">
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <p class="text-secondary fs-5">Lorem ipsum dolor sit amet, consectetur elit. Maecenas dictum
@@ -811,7 +810,7 @@
         <!-- Recent Posts Section -->
         <div class="col-md-5">
           <h5 class="text-success fs-4">Recent Posts</h5>
-          <div id="postsCarousel" class="carousel slide mt-4" data-bs-ride="carousel" data-bs-interval="2500">
+          <div id="postsCarousel" class="carousel slide mt-4" data-bs-ride="carousel" data-bs-interval="2000">
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <p class="text-secondary fs-5">Lorem ipsum dolor sit amet, consectetur elit. Maecenas dictum
@@ -855,7 +854,7 @@
           Lorem ipsum dolor sit amet, consectetur adipiscing phasellus vestibulum fermentum laoreet.
         </p>
         <div class="input-group mb-3 w-75">
-          <input type="text" class="form-control py-2" placeholder="Enter your e-mail address ...">
+          <input type="text" class="form-control py-2 bg-body-tertiary" placeholder="Enter your e-mail address ...">
           <button class="btn bg-secondary rounded-end-5 px-4" type="button">
             <span class="text-white"><iconify-icon icon="uit:telegram-alt" class="fs-3"></iconify-icon></span>
           </button>
@@ -867,7 +866,7 @@
     </div>
   </div>
   <div class="d-flex justify-content-end me-4 pe-2 sticky-bottom">
-    <button class="btn bg-success px-4 rounded-3 py-3 my-2" id="sticky-btn">
+    <button class="btn bg-secondary px-4 rounded-3 py-3 my-2" id="sticky-btn">
       <span class="text-white fs-4">
         <iconify-icon icon="cil:arrow-top" class="mt-2"></iconify-icon>
       </span>
@@ -903,7 +902,7 @@
             our promotional <br>
             emails.</p>
           <div class="input-group mb-3 w-100">
-            <input type="text" class="form-control py-2" placeholder="Enter your e-mail address ...">
+            <input type="text" class="form-control py-2 bg-body-tertiary" placeholder="Enter your e-mail address ...">
             <button class="btn btn-outline-secondary bg-secondary rounded-end-5 px-4" type="button">
               <span class="text-white"><iconify-icon icon="uit:telegram-alt" class="fs-3"></iconify-icon></span>
             </button>
@@ -952,14 +951,15 @@
   <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
     <div class="offcanvas-header">
       <h5 class="offcanvas-title text-secondary" id="offcanvasExampleLabel">Your Cart</h5>
-      <a href="#" class="text-decoration-none"><button type="button" class="btn-close" data-bs-dismiss="offcanvas"
-          aria-label="Close"></button></a>
+     <button type="button" class="btn-close me-3" data-bs-dismiss="offcanvas"
+          aria-label="Close"></button>
     </div>
     <div class="offcanvas-body mt-4">
       <span>No products in the cart </span>
       <hr>
       <div class="text-center mt-5">
-        <button class="btn btn-outline-secondary" id="startShopping" type="button" data-bs-toggle="dropdown"> Start shopping</button>
+        <button class="btn btn-outline-secondary" id="startShopping" type="button" data-bs-toggle="dropdown"> Start
+          shopping</button>
       </div>
     </div>
   </div>

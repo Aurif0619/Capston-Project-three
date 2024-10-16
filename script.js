@@ -8,6 +8,6 @@ document.getElementById('sticky-btn').addEventListener('click', function () {
 
 
 document.getElementById('startShopping').addEventListener("click", function () {
-   
-  window.location.href ="./index.html"
+
+  window.location.href = "./index.html"
 })
