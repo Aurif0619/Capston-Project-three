@@ -17,13 +17,12 @@ body {
 h1 {
   font-family: "Merriweather Sans", sans-serif;
   font-size: 63px !important;
+  color: #364A15 !important;
 }
-.text {
-  color: #364A15;
-}
+
 h2,
 span,
-p{
+p {
   font-family: "Jost", sans-serif !important;
 }
 
@@ -44,8 +43,9 @@ p{
   background-image: url("/imgs/home-2.jpg");
   height: 100vh;
 }
-.price{
- color: #9A6C1D !important;
+
+.price {
+  color: #9A6C1D !important;
 }
 
 .hero-section-3 {

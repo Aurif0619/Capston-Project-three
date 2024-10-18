@@ -16,7 +16,7 @@ h1 {
 }
 
 .text {
-    color: #364A15;
+    color: #364A15 !important;
 }
 
 .text-color {
