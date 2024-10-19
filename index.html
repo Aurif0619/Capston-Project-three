@@ -16,7 +16,7 @@
 </head>
 
 <body>
-  <nav class="py-1 sticky-top bg-body-secondary">
+  <nav class="py-1">
     <div class="container mt-2">
       <div class="d-none d-lg-flex d-flex justify-content-between">
         <div class="pt-2 d-flex">
@@ -128,12 +128,14 @@
     </div>
   </nav>
 
-  <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="2300">
+  
+<!-- Hero Section -->
+  <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="2000">
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <div class="hero-section d-flex justify-content-center align-items-center"
-         style=" background-size: cover;">
-          <div class="container">
+        <div class="hero-section d-flex justify-content-center align-items-center position-relative">
+          <img src="/imgs/bg-img-1.jpg" alt="Healthy Food Background" class="img-fluid w-100 h-100 position-absolute top-0 start-0 object-fit-cover">
+          <div class="container position-relative z-index-1">
             <div class="row">
               <div class="col-lg-8">
                 <h1 class="fw-bolder text">Healthy Food</h1>
@@ -153,18 +155,19 @@
           </div>
         </div>
       </div>
+      
       <!-- Second Slide -->
       <div class="carousel-item">
-        <div class="hero-section-2 d-flex justify-content-center align-items-center"
-         style=" background-size: cover;">
-          <div class="container">
+        <div class="hero-section d-flex justify-content-center align-items-center position-relative">
+          <img src="/imgs/bg-img--2.jpg" alt="Fresh Sale Background" class="img-fluid w-100 h-100 position-absolute top-0 start-0 object-fit-cover">
+          <div class="container position-relative z-index-1">
             <div class="row">
               <div class="col-lg-8">
                 <h1 class="fw-bolder text">Fresh Sale Days</h1>
-                <span class="pt-2 text-secondary fs-4">Special offers all fruit products</span>
+                <span class="pt-2 text-secondary fs-5 d-block">Special offers all fruit products</span>
                 <div class="d-flex">
                   <div>
-                    <span class="btn mt-3 fs-5 price fw-medium">Shop Now</span>
+                    <span class="btn fw-medium mt-3 fs-5 price">Shop Now</span>
                   </div>
                   <div class="d-flex mt-3 pt-2">
                     <span class="fs-3 border-4 rounded-5 price">
@@ -177,19 +180,19 @@
           </div>
         </div>
       </div>
-
+      
       <!-- Third Slide -->
       <div class="carousel-item">
-        <div class="hero-section-3 d-flex justify-content-center align-items-center"
-         style=" background-size: cover;">
-          <div class="container">
+        <div class="hero-section d-flex justify-content-center align-items-center position-relative">
+          <img src="/imgs/bg-img-3.jpg" alt="Natural Aloe Vera Background" class="img-fluid w-100 h-100 position-absolute top-0 start-0 object-fit-cover">
+          <div class="container position-relative z-index-1">
             <div class="row">
               <div class="col-lg-8">
                 <h1 class="fw-bolder text">Natural Aloe Vera</h1>
-                <span class="pt-2 text-secondary fs-4">Special offers this week</span>
+                <span class="pt-2 text-secondary fs-5 d-block">Special offers this week</span>
                 <div class="d-flex">
                   <div>
-                    <span class="btn fw-medium mt-3 fs-5">Shop Now</span>
+                    <span class="btn fw-medium mt-3 fs-5 price">Shop Now</span>
                   </div>
                   <div class="d-flex mt-3 pt-2">
                     <span class="fs-3 border-4 rounded-5 price">
@@ -202,26 +205,29 @@
           </div>
         </div>
       </div>
+  
     </div>
-
-    <button class="carousel-control-prev rounded-circle position-absolute top-50 translate-middle-y" type="button"
-      data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+  
+    <!-- Controls for Previous/Next -->
+    <button class="carousel-control-prev rounded-circle position-absolute top-50 translate-middle-y" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
       <div class="bg-black px-3 py-2 rounded-circle mt-5 me-4 d-none d-md-block">
-        <span class="px-0 my-3 text-white fs-4 ">
+        <span class="px-0 my-3 text-white fs-4">
           <iconify-icon icon="teenyicons:arrow-left-solid" class="mt-2"></iconify-icon>
+        </span>
       </div>
       <span class="visually-hidden">Previous</span>
     </button>
-    <button class="carousel-control-next px-3 py-2 rounded-circle position-absolute top-50 translate-middle-y"
-      type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+    
+    <button class="carousel-control-next px-3 py-2 rounded-circle position-absolute top-50 translate-middle-y" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
       <div class="bg-black px-3 py-2 rounded-circle mt-5 d-none d-md-block">
         <span class="px-0 my-2 text-white fs-4">
           <iconify-icon icon="teenyicons:arrow-right-solid" class="mt-2"></iconify-icon>
+        </span>
       </div>
-      </span>
       <span class="visually-hidden">Next</span>
     </button>
   </div>
+  
 
   <!-- cards -->
   <div class="container">
@@ -299,12 +305,13 @@
       </div>
     </div>
   </div>
+  
   <!-- 1st card section: Tomato Card-->
   <div class="container mt-5 pt-3">
     <div class="row" id="product-cards">
       <div class="col-md-3 col-sm-6 mb-4">
         <div class="card h-100 text-center">
-          <div class="badge bg-info text-white position-absolute btn">Best</div>
+          <div class="badge bg-info text-white position-absolute btn-position">Best</div>
           <img src="/imgs/graps.png" class="card-img-top image img-fluid" alt="Organic Grape">
           <div class="card-body">
             <button class="border-0 px-3 py-1 rounded-5">N-Farm</button>
@@ -342,7 +349,7 @@
       <!-- Card Corn 2-->
       <div class="col-md-3 col-sm-6 mb-4">
         <div class="card h-100 text-center">
-          <div class="badge bg-success text-white position-absolute btn">Sale!</div>
+          <div class="badge bg-success text-white position-absolute btn-position">Sale!</div>
           <img src="/imgs/corn.png" class="card-img-top img-fluid" alt="Organic Corn">
           <div class="card-body">
             <button class="border-0 px-3 py-1 rounded-5">E-Farm</button>
@@ -387,7 +394,7 @@
       <!--Cherry Card 3 -->
       <div class="col-md-3 col-sm-6 mb-4">
         <div class="card h-100 text-center">
-          <div class="badge bg-success text-white position-absolute btn">Sale!</div>
+          <div class="badge bg-success text-white position-absolute btn-position">Sale!</div>
           <img src="/imgs/cherry.png" class="card-img-top img-fluid" alt="Organic Cherry">
           <div class="card-body">
             <button class="border-0 px-3 py-1 rounded-5">E-Farm</button>
@@ -425,7 +432,7 @@
       <!--Lemon Card 4 -->
       <div class="col-md-3 col-sm-6 mb-4">
         <div class="card h-100 text-center">
-          <div class="badge bg-success text-white position-absolute btn">Sale!</div>
+          <div class="badge bg-success text-white position-absolute btn-position">Sale!</div>
           <img src="/imgs/lemon.png" class="card-img-top img-fluid" alt="Organic Lemon">
           <div class="card-body">
             <button class="rounded-5 border-0 px-3 py-1">N-Farm</button>
@@ -467,7 +474,7 @@
     <div class="row">
       <div class="col-md-3 col-sm-6 mb-4">
         <div class="card h-100 text-center">
-          <div class="badge bg-info text-white position-absolute btn">Best</div>
+          <div class="badge bg-info text-white position-absolute btn-position">Best</div>
           <img src="/imgs/tomoato.png" class="card-img-top img-fluid" alt="Organic Tomato">
           <div class="card-body">
             <button class="border-0 px-3 py-1 rounded-5">H-Life</button>
@@ -506,7 +513,7 @@
       <!--Lettuc Card 2 -->
       <div class="col-md-3 col-sm-6 mb-4">
         <div class="card h-100 text-center">
-          <div class="badge bg-success text-white position-absolute btn">Sale!</div>
+          <div class="badge bg-success text-white position-absolute btn-position">Sale!</div>
           <img src="imgs/lettuc.png" class="card-img-top img-fluid" alt="Organic Lettue">
           <div class="card-body">
             <button class="border-0 px-3 py-1 rounded-5">Farmer</button>
@@ -544,7 +551,7 @@
       <!--Potato Card 3 -->
       <div class="col-md-3 col-sm-6 mb-4">
         <div class="card h-100 text-center">
-          <div class="badge bg-success text-white position-absolute btn">Sale!</div>
+          <div class="badge bg-success text-white position-absolute btn-position">Sale!</div>
           <img src="/imgs/potato.png" class="card-img-top img-fluid" alt="Organic Potato">
           <div class="card-body">
             <button class="border-0 px-3 py-1 rounded-5">N-Farm</button>
@@ -582,7 +589,7 @@
       <!--Mashroom Card 4 -->
       <div class="col-md-3 col-sm-6 mb-4">
         <div class="card h-100 text-center">
-          <div class="badge bg-success text-white position-absolute btn">Sale!</div>
+          <div class="badge bg-success text-white position-absolute btn-position">Sale!</div>
           <img src="/imgs/mashroom.png" class="card-img-top img-fluid" alt="Organic Mashroom">
           <div class="card-body">
             <button class="rounded-5 border-0 px-3 py-1">E-Farm</button>
@@ -624,7 +631,7 @@
     <div class="row">
       <div class="col-md-3 col-sm-6 mb-4">
         <div class="card h-100 text-center">
-          <div class="badge bg-info text-white position-absolute btn">Best</div>
+          <div class="badge bg-info text-white position-absolute btn-position">Best</div>
           <img src="/imgs/banana.png" class="card-img-top img-fluid" alt="Organic banana">
           <div class="card-body">
             <button class="border-0 px-3 py-1 rounded-5">E-Farm</button>
@@ -662,7 +669,7 @@
       <!--Bean Card 2 -->
       <div class="col-md-3 col-sm-6 mb-4">
         <div class="card h-100 text-center">
-          <div class="badge bg-success text-white position-absolute btn">Sale!</div>
+          <div class="badge bg-success text-white position-absolute btn-position">Sale!</div>
           <img src="/imgs/bean.png" class="card-img-top img-fluid" alt="Organic Bean">
           <div class="card-body">
             <button class="border-0 px-3 py-1 rounded-5">H-Life</button>
@@ -700,7 +707,7 @@
       <!--Carrot Card 3 -->
       <div class="col-md-3 col-sm-6 mb-4">
         <div class="card h-100 text-center">
-          <div class="badge bg-info text-white position-absolute btn">Best</div>
+          <div class="badge bg-info text-white position-absolute btn-position">Best</div>
           <img src="/imgs/carrot.png" class="card-img-top img-fluid" alt="Organic Carrot">
           <div class="card-body">
             <button class="border-0 px-3 py-1 rounded-5">N-Farm</button>
@@ -738,7 +745,7 @@
       <!--Apple Card 4 -->
       <div class="col-md-3 col-sm-6 mb-4">
         <div class="card h-100 text-center">
-          <div class="badge bg-success text-white position-absolute btn">Sale!</div>
+          <div class="badge bg-success text-white position-absolute btn-position">Sale!</div>
           <img src="/imgs/apple.jpg" class="card-img-top img-fluid" alt="Organic Apple">
           <div class="card-body">
             <button class="rounded-5 border-0 px-3 py-1">E-Farm</button>

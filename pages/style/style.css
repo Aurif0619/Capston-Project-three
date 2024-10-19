@@ -35,24 +35,16 @@ p {
 }
 
 .hero-section {
-  background-image: url(/imgs/bg-img-1.jpg);
   height: 100vh;
 }
 
-.hero-section-2 {
-  background-image: url("/imgs/home-2.jpg");
-  height: 100vh;
+.btn-position {
+  top: 10px;
+  left: 10px;
 }
-.btn{
-  top: 10px; left: 10px;
-}
+
 .price {
   color: #9A6C1D !important;
-}
-
-.hero-section-3 {
-  background-image: url("/imgs/home-3.jpg");
-  height: 100vh;
 }
 
 .cards-bg-img-1 {
