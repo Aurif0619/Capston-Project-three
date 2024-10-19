@@ -43,7 +43,9 @@ p {
   background-image: url("/imgs/home-2.jpg");
   height: 100vh;
 }
-
+.btn{
+  top: 10px; left: 10px;
+}
 .price {
   color: #9A6C1D !important;
 }

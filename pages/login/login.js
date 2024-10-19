@@ -1,4 +1,3 @@
-// Sign In
 document.querySelector(".loginForm").addEventListener("submit", function (event) {
     event.preventDefault();
 
@@ -10,30 +9,31 @@ document.querySelector(".loginForm").addEventListener("submit", function (event)
 
     if (userEmail && userPassword) {
         if (userEmail === storedEmail && userPassword === storedPassword) {
-            document.getElementById("alertMessage").innerHTML = "Welcome to the Home page!";
-            document.getElementById("alertMessage").classList.add("alert-success");
-
-            setTimeout(function () {
+            displayAlert("Welcome to the Home page!", "alert-success");
+            setTimeout(() => {
                 window.location.href = "/index.html";
             }, 2000);
         } else {
-            document.getElementById("alertMessage").innerHTML = "Something went wrong!";
-            document.getElementById("alertMessage").classList.add("alert-danger");
-
-            setTimeout(function () {
-             document.getElementById("alertMessage").innerHTML = "";
-            document.getElementById("alertMessage").classList.remove("alert-danger");
-            }, 2000)
+            displayAlert("Something went wrong!", "alert-danger");
+            resetForm();
         }
     } else {
-        document.getElementById("alertMessage").innerHTML = "Please the credential!";
-        document.getElementById("alertMessage").classList.add("alert-danger");
-
-        setTimeout(function () {
-            document.getElementById("alertMessage").innerHTML = "";
-           document.getElementById("alertMessage").classList.remove("alert-danger");
-           }, 2000)
+        displayAlert("Oops! Something went wrong. Please try again later", "alert-danger");
+        resetForm();
     }
-
     console.log(userEmail, userPassword);
 });
+
+function displayAlert(message, className) {
+    document.getElementById("alertMessage").innerHTML = message;
+    document.getElementById("alertMessage").classList.add(className);
+    setTimeout(() => {
+        document.getElementById("alertMessage").innerHTML = "";
+        document.getElementById("alertMessage").classList.remove(className);
+    }, 2000)
+}
+
+function resetForm() {
+    document.getElementById("userEmail").value = "";
+    document.getElementById("userPassword").value = "";
+}
