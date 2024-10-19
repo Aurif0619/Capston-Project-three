@@ -2,17 +2,17 @@ let cart = [];
 
 let products = [
   { name: 'Organic Grape', image: '/imgs/graps.png', price: 12.40, quantity: 1 },
-   { name: 'Organic Corn', image: '/imgs/corn.png', price: 32.20, quantity: 1 },
+  { name: 'Organic Corn', image: '/imgs/corn.png', price: 32.20, quantity: 1 },
   { name: 'Organic Cherry', image: '/imgs/cherry.png', price: 15.45, quantity: 1 },
-   { name: 'Organic Lemon', image: '/imgs/lemon.png', price: 19.45, quantity: 1 },
+  { name: 'Organic Lemon', image: '/imgs/lemon.png', price: 19.45, quantity: 1 },
   { name: 'Organic Tomato', image: '/imgs/tomoato.png', price: 12.40, quantity: 1 },
-   { name: 'Organic Lettuce', image: '/imgs/lettuc.png', price: 12.40, quantity: 1 },
+  { name: 'Organic Lettuce', image: '/imgs/lettuc.png', price: 12.40, quantity: 1 },
   { name: 'Organic Potato', image: '/imgs/potato.png', price: 14.40, quantity: 1 },
-   { name: 'Organic Mashroom', image: '/imgs/mashroom.png', price: 12.40, quantity: 1 },
+  { name: 'Organic Mashroom', image: '/imgs/mashroom.png', price: 12.40, quantity: 1 },
   { name: 'Organic Banana', image: '/imgs/banana.png', price: 12.40, quantity: 1 },
-   { name: 'Organic Bean', image: '/imgs/bean.png', price: 14.40, quantity: 1 },
+  { name: 'Organic Bean', image: '/imgs/bean.png', price: 14.40, quantity: 1 },
   { name: 'Organic Carrot', image: '/imgs/carrot.png', price: 12.40, quantity: 1 },
-   { name: 'Organic Apple', image: '/imgs/apple.jpg', price: 14.40, quantity: 1 }
+  { name: 'Organic Apple', image: '/imgs/apple.jpg', price: 14.40, quantity: 1 }
 ];
 
 
