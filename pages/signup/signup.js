@@ -16,6 +16,7 @@ document.querySelector(".signUpForm").addEventListener("submit", function (event
         }
         localStorage.setItem("Email", userEmail);
         localStorage.setItem("password", userPassword);
+        localStorage.setItem("confirmPassword", confirmPassword);
 
         displayAlert("Sign Up Successful!", "alert-success");
 

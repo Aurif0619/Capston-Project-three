@@ -76,8 +76,9 @@
             </div>
             <div class="navbar navbar-expand-lg navbar-light my-3">
                 <div class="container-fluid">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                        aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
@@ -136,16 +137,16 @@
     </div>
     <div class="container my-5">
         <div class="row">
-            <div class="col-md-6">
-                <h1 class="fs-4 text-color">Login</h1>
-                <form class="loginForm">
+            <div class="col-md-6 mb-3 pb-3">
+                <h1 class="fs-4 text-color ms-1">Login</h1>
+                <form class="loginForm ms-1">
                     <div class="flex-column">
                         <div class="col-md-12">
                             <label class="my-1 fs-5">Username or email address</label> <br>
                             <input type="email" class="px-3 py-2 w-100" id="userEmail">
                         </div>
-                        <div class="col-md-12">
-                            <label class="my-1 pt-3 fs-5">Password</label><br>
+                        <div class="col-md-12 mt-3">
+                            <label class="py-2 fs-5 mt-1 pt-2">Password</label><br>
                             <input type="password" class="px-3 py-2 w-100" id="userPassword"><br>
                             <div class="mt-1 align-items-center justify-content-center">
                                 <input class="form-check-input custom-checkbox-size px-3 py-3" type="checkbox"
@@ -159,19 +160,19 @@
                             <button class="btn bg-white btn-outline-secondary mt-3 px-4 py-3 text-secondary"
                                 type="submit">Log in</button>
                         </div>
-                        <div class="col-md-10">
+                        <div class="mt-2">
                             <button class="btn bg-white border-0 fs-5">Lost your password?</button>
                         </div>
                     </div>
                 </form>
-
             </div>
             <div class="col-md-12 col-lg-6 col-sm-12">
                 <h1 class="fs-4 text-color">Register</h1>
-                <div class="border  border-secondary p-3">
-                    <label class="my-1 fs-5">Username or email address</label> <br>
-                    <input type="text" class="px-3 py-2 w-100 mt-2">
-                    <p class="fs-5 text-secondary pt-3">A link to set a new password will be sent to your email address.
+                <div class="border border-secondary p-3">
+                    <label class="my-1 mb-1 pb-1 fs-5 py-2 my-2 ">Username or email address</label> <br>
+                    <input type="text" class="px-3 py-2 w-100 my-2 mb-2">
+                    <p class="fs-5 text-secondary pt-3 ">A link to set a new password will be sent to your email
+                        address.
                     </p>
                     <p class="fs-5 text-secondary">Your personal data will be used to support your experience throughout
                         this website, to manage access to your account, and for other purposes described in our privacy
@@ -181,14 +182,13 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 
     <!-- footer section -->
-    <footer class="py-5 bg-light">
-        <div class="container py-4">
-            <div class="row">
+    <footer class="bg-light py-5">
+        <div class="container">
+            <div class="row ms-2">
                 <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
                     <div class="d-flex flex-column align-items-start">
                         <img src="/imgs/logo.png" alt="Naturally Logo" class="w-50 w-md-25 w-sm-50">
@@ -209,14 +209,14 @@
                         <p class="text-secondary fs-5">sales@naturally.com</p>
                     </div>
                 </div>
-                <div class="col-md-6 col-sm-12 mt-3">
+                <div class="col-md-6 col-sm-12">
                     <span class="mb-3 fs-3">Sign Up & Save</span>
                     <p class="text-secondary fs-5 mt-2">Get exclusive offers, free shipping events & <br> more by
                         signing up for
                         our promotional <br>
                         emails.</p>
                     <div class="input-group mb-3 w-100">
-                        <input type="text" class="form-control py-2 border-2"
+                        <input type="text" class="form-control py-2 bg-body-tertiary shadow-none"
                             placeholder="Enter your e-mail address ...">
                         <button class="btn btn-outline-secondary bg-secondary rounded-end-5 px-4" type="button">
                             <span class="text-white"><iconify-icon icon="uit:telegram-alt"
@@ -229,15 +229,15 @@
                             <span class="text-white fs-5"><iconify-icon icon="brandico:facebook"
                                     class="pt-1 pt-0 fs-3"></iconify-icon></span>
                         </button>
-                        <button class="btn btn-outline-secondary py-2 rounded-circle bg-secondary mx-2">
+                        <button class="btn btn-outline-secondary py-2 rounded-circle bg-secondary mx-3">
                             <span class="text-white fs-5"><iconify-icon icon="akar-icons:twitter-fill"
                                     class="pt-1 pt-0 fs-3"></iconify-icon></span>
                         </button>
-                        <button class="btn btn-outline-secondary py-2 rounded-circle bg-secondary mx-2">
+                        <button class="btn btn-outline-secondary py-2 rounded-circle bg-secondary mx-3">
                             <span class="text-white fs-5"><iconify-icon icon="akar-icons:instagram-fill"
                                     class="pt-1 pt-0 fs-3"></iconify-icon></span>
                         </button>
-                        <button class="btn btn-outline-secondary py-2 rounded-circle bg-secondary mx-2">
+                        <button class="btn btn-outline-secondary py-2 rounded-circle bg-secondary mx-3">
                             <span class="text-white fs-5"><iconify-icon icon="vaadin:youtube"
                                     class="pt-1 pt-0 fs-3"></iconify-icon></span>
                         </button>
@@ -261,6 +261,7 @@
             </div>
         </div>
     </footer>
+
 
     <!-- offcanvas -->
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">

@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <nav class="bg-body-tertiary py-3">
+    <nav class="bg-body-tertiary py-2">
         <div class="container">
             <div class="d-none d-lg-flex d-flex justify-content-between">
                 <div class="pt-2 d-flex">
@@ -75,8 +75,9 @@
             </div>
             <div class="navbar navbar-expand-lg navbar-light my-3">
                 <div class="container-fluid">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                        aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
@@ -137,42 +138,42 @@
     </div>
     <div class="container my-5">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6 mb-4 pb-2">
                 <h1 class="fs-4 text-color ms-1">Sign UP</h1>
                 <div class="container mt-4">
                     <form class="signUpForm ms-1">
                         <div class="flex-column">
                             <div class="col-md-12">
-                                <label class="my-1 fs-5">Username or email address</label>
+                                <label class="my-1 pb-1 fs-5">Username or email address</label>
                                 <br>
                                 <input type="email" id="userEmail" class="px-3 py-2 w-100">
                             </div>
-                            <div class="col-md-12">
-                                <label class="my-1 pt-3 fs-5">Password</label>
+                            <div class="col-md-12 mt-2">
+                                <label class="my-1 pt-3 mb-2 fs-5">Password</label>
                                 <br>
                                 <input type="password" id="userPassword" class="px-3 py-2 w-100">
                                 <br>
                             </div>
-                            <div class="col-md-12">
-                                <label class="my-1 pt-3 fs-5">Confirm Password</label>
+                            <div class="col-md-12 pt-2 mt-2">
+                                <label class="my-1 py-2 pb-1 fs-5">Confirm Password</label>
                                 <br>
                                 <input type="password" id="confirmPassword" class="px-3 py-2 w-100">
                                 <br>
                             </div>
-                            <div class="mt-1 align-items-center justify-content-center">
+                            <div class="mt-3 align-items-center justify-content-center">
                                 <input class="form-check-input custom-checkbox-size px-3 py-3" type="checkbox"
                                     id="rememberMe">
                                 <label class="form-check-label mt-2 fs-6" for="rememberMe">
                                     Remember me
                                 </label>
                             </div>
-                            <div>
+                            <div class="mt-1">
                                 <button type="submit"
                                     class="btn bg-white btn-outline-secondary mt-2 px-4 py-3 text-secondary">
                                     Sign Up
                                 </button>
                             </div>
-                            <div class="col-md-10">
+                            <div class="mt-2">
                                 <button class="btn bg-white border-0 fs-5 mt-1">Lost your password?</button>
                             </div>
                         </div>
@@ -199,15 +200,17 @@
     </div>
 
     <!-- footer section -->
-    <footer class="py-5 bg-light">
-        <div class="container py-4">
-            <div class="row">
+    <footer class="bg-light py-5">
+        <div class="container">
+            <div class="row ms-2">
                 <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
                     <div class="d-flex flex-column align-items-start">
-                        <img src="imgs/logo.png" alt="Naturally Logo" class="w-50 w-md-25 w-sm-50">
+                        <img src="/imgs/logo.png" alt="Naturally Logo" class="w-50 w-md-25 w-sm-50">
                         <div>
                             <p class="text-secondary mt-3 fs-5">Lorem ipsum dolor sit amet, consectetur <br> adipiscing
-                                elit. Nullanec nisi acturpis <br> laoreet auctor sed sed turpis.
+                                elit. Nulla
+                                nec nisi ac
+                                turpis <br> laoreet auctor sed sed turpis.
                             </p>
                         </div>
                     </div>
@@ -220,14 +223,15 @@
                         <p class="text-secondary fs-5">sales@naturally.com</p>
                     </div>
                 </div>
-                <div class="col-md-6 col-sm-12 mt-3">
+                <div class="col-md-6 col-sm-12">
                     <span class="mb-3 fs-3">Sign Up & Save</span>
                     <p class="text-secondary fs-5 mt-2">Get exclusive offers, free shipping events & <br> more by
                         signing up for
                         our promotional <br>
                         emails.</p>
                     <div class="input-group mb-3 w-100">
-                        <input type="text" class="form-control py-2" placeholder="Enter your e-mail address ...">
+                        <input type="text" class="form-control py-2 bg-body-tertiary shadow-none"
+                            placeholder="Enter your e-mail address ...">
                         <button class="btn btn-outline-secondary bg-secondary rounded-end-5 px-4" type="button">
                             <span class="text-white"><iconify-icon icon="uit:telegram-alt"
                                     class="fs-3"></iconify-icon></span>
@@ -239,15 +243,15 @@
                             <span class="text-white fs-5"><iconify-icon icon="brandico:facebook"
                                     class="pt-1 pt-0 fs-3"></iconify-icon></span>
                         </button>
-                        <button class="btn btn-outline-secondary py-2 rounded-circle bg-secondary mx-2">
+                        <button class="btn btn-outline-secondary py-2 rounded-circle bg-secondary mx-3">
                             <span class="text-white fs-5"><iconify-icon icon="akar-icons:twitter-fill"
                                     class="pt-1 pt-0 fs-3"></iconify-icon></span>
                         </button>
-                        <button class="btn btn-outline-secondary py-2 rounded-circle bg-secondary mx-2">
+                        <button class="btn btn-outline-secondary py-2 rounded-circle bg-secondary mx-3">
                             <span class="text-white fs-5"><iconify-icon icon="akar-icons:instagram-fill"
                                     class="pt-1 pt-0 fs-3"></iconify-icon></span>
                         </button>
-                        <button class="btn btn-outline-secondary py-2 rounded-circle bg-secondary mx-2">
+                        <button class="btn btn-outline-secondary py-2 rounded-circle bg-secondary mx-3">
                             <span class="text-white fs-5"><iconify-icon icon="vaadin:youtube"
                                     class="pt-1 pt-0 fs-3"></iconify-icon></span>
                         </button>

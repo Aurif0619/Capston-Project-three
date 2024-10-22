@@ -76,10 +76,11 @@
       </div>
       <div class="navbar navbar-expand-lg navbar-light my-2 sticky-top">
         <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
+
           <div class="collapse navbar-collapse" id="navbarNav">
             <div class="d-flex justify-content-center align-items-center">
               <a href="/index.html"><img class="img-fluid" src="/imgs/logo.png" alt="Logo"></a>
@@ -130,7 +131,7 @@
 
 
   <!-- Hero Section -->
-  <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="2000">
+  <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="1900">
     <div class="carousel-inner">
       <div class="carousel-item active">
         <div class="hero-section d-flex justify-content-center align-items-center position-relative">
@@ -209,8 +210,6 @@
         </div>
       </div>
     </div>
-
-    <!-- Controls for Previous/Next -->
     <button class="carousel-control-prev rounded-circle position-absolute top-50 translate-middle-y" type="button"
       data-bs-target="#carouselExampleFade" data-bs-slide="prev">
       <div class="bg-black px-3 py-2 rounded-circle mt-5 me-4 d-none d-md-block">
@@ -243,10 +242,10 @@
               <span class="card-title d-block fs-5 text-secondary">Up to 70% discount</span>
               <div class="d-flex">
                 <div>
-                  <button class="btn mb-1 text-secondary">Shop Now</button>
+                  <span class="btn fw-medium fs-5 price">Shop Now</span>
                 </div>
-                <div class="d-flex mt-2">
-                  <span class="border-4 text-secondary fs-4 rounded-5 border-dark">
+                <div class="d-flex pt-2">
+                  <span class="fs-3 border-4 rounded-5 price">
                     <iconify-icon icon="solar:arrow-right-linear"></iconify-icon>
                   </span>
                 </div>
@@ -262,10 +261,10 @@
               <span class="card-title fs-5 text-secondary">Up to 70% discount</span>
               <div class="d-flex">
                 <div>
-                  <button class="btn mt-0 text-secondary">Shop Now</button>
+                  <span class="btn fw-medium fs-5 price">Shop Now</span>
                 </div>
-                <div class="d-flex mt-2">
-                  <span class="border-4 text-secondary fs-4 rounded-5 border-dark">
+                <div class="d-flex pt-2">
+                  <span class="fs-3 border-4 rounded-5 price">
                     <iconify-icon icon="solar:arrow-right-linear"></iconify-icon>
                   </span>
                 </div>
@@ -281,10 +280,10 @@
               <span class="card-title fs-5 text-secondary">Up to 70% discount</span>
               <div class="d-flex">
                 <div>
-                  <button class="btn mt-0 text-secondary">Shop Now</button>
+                  <span class="btn fw-medium fs-5 price">Shop Now</span>
                 </div>
-                <div class="d-flex mt-2">
-                  <span class="border-4 text-secondary fs-4 rounded-5 border-dark">
+                <div class="d-flex pt-2">
+                  <span class="fs-3 border-4 rounded-5 price">
                     <iconify-icon icon="solar:arrow-right-linear"></iconify-icon>
                   </span>
                 </div>
@@ -310,15 +309,19 @@
     </div>
   </div>
 
-  <!-- 1st card section: Tomato Card-->
+  <!-- 1st card section:Grape Card-->
   <div class="container mt-5 pt-3">
     <div class="row" id="product-cards">
       <div class="col-md-3 col-sm-6 mb-4">
         <div class="card h-100 text-center">
-          <div class="badge bg-info text-white position-absolute btn-position">Best</div>
-          <img src="imgs/graps.png" class="card-img-top image img-fluid" alt="Organic Grape">
+          <div class="position-absolute btn-position start-50 ms-5 mt-2 d-none d-md-block">
+            <div class="badge bg-body-tertiary text-success mb-1 px-3 py-3 ms-4">Best!</div>
+            <div class="badge bg-primary text-white py-3 px-4 mb-1 ms-4">KG</div>
+            <div class="badge bg-danger text-white  py-3 px-3 ms-4">13.9%</div>
+          </div>
+          <img src="./imgs/graps.png" class="card-img-top image img-fluid" alt="Organic Grape">
           <div class="card-body">
-            <button class="border-0 px-3 py-1 rounded-5">N-Farm</button>
+            <button class="border-0 px-3 py-1 rounded-5 btn-hover">N-Farm</button>
             <p class="mt-5 fs-5 price">Organic Grape</p>
             <p class="card-text text-secondary"><s>$14.40</s> <span class="price fs-5">$12.40</span></p>
             <div class="container">
@@ -328,11 +331,11 @@
                     <button
                       class="btn border-start-0 border-top-0 border-bottom-0 border-end border-1 btn-outline-secondary mx-0"
                       onclick="addToCart(products[0])">
-                      <span class="fs-4"><iconify-icon icon="bytesize:cart"></iconify-icon></span>
+                      <span class="fs-4 "><iconify-icon class="pt-2" icon="bytesize:cart"></iconify-icon></span>
                     </button>
                     <button
                       class="btn border-start border-top-0 border-bottom-0 border-end border-1 btn-outline-secondary mx-0">
-                      <span class="fs-4"><iconify-icon icon="mdi-light:eye"></iconify-icon></span>
+                      <span class="fs-4"><iconify-icon class="pt-1" icon="mdi-light:eye"></iconify-icon></span>
                     </button>
                     <button
                       class="btn border-start border-top-0 border-bottom-0 border-end border-1 btn-outline-secondary mx-0">
@@ -340,7 +343,8 @@
                     </button>
                     <button
                       class="btn border-start border-top-0 border-bottom-0 border-end-0 border-1 btn-outline-secondary mx-0">
-                      <span class="fs-4 text-center"><iconify-icon icon="akar-icons:arrow-cycle"></iconify-icon></span>
+                      <span class="fs-4 text-center"><iconify-icon class="mt-1 pt-1"
+                          icon="akar-icons:arrow-cycle"></iconify-icon></span>
                     </button>
                   </div>
                 </div>
@@ -353,10 +357,12 @@
       <!-- Card Corn 2-->
       <div class="col-md-3 col-sm-6 mb-4">
         <div class="card h-100 text-center">
-          <div class="badge bg-success text-white position-absolute btn-position">Sale!</div>
-          <img src="imgs/corn.png" class="card-img-top img-fluid" alt="Organic Corn">
+          <div class="position-absolute btn-position start-50 ms-5 mt-2 d-none d-md-block">
+            <div class="badge bg-body-tertiary text-success mb-1 px-3 py-3 ms-4">Sale!</div>
+          </div>
+          <img src="./imgs/corn.png" class="card-img-top img-fluid" alt="Organic Corn">
           <div class="card-body">
-            <button class="border-0 px-3 py-1 rounded-5">E-Farm</button>
+            <button class="border-0 px-3 py-1 rounded-5 btn-hover">E-Farm</button>
             <p class="mt-5 fs-5 price">Organic Corn</p>
             <span class="fs-5">
               <iconify-icon icon="twemoji:star"></iconify-icon>
@@ -373,11 +379,11 @@
                     <button
                       class="btn border-start-0 border-top-0 border-bottom-0 border-end border-1 btn-outline-secondary mx-0"
                       onclick="addToCart(products[1])">
-                      <span class="fs-4"><iconify-icon icon="bytesize:cart"></iconify-icon></span>
+                      <span class="fs-4"><iconify-icon class="pt-2" icon="bytesize:cart"></iconify-icon></span>
                     </button>
                     <button
                       class="btn border-start border-top-0 border-bottom-0 border-end border-1 btn-outline-secondary mx-0">
-                      <span class="fs-4"><iconify-icon icon="mdi-light:eye"></iconify-icon></span>
+                      <span class="fs-4"><iconify-icon class="pt-1" icon="mdi-light:eye"></iconify-icon></span>
                     </button>
                     <button
                       class="btn border-start border-top-0 border-bottom-0 border-end border-1 btn-outline-secondary mx-0">
@@ -385,7 +391,8 @@
                     </button>
                     <button
                       class="btn border-start border-top-0 border-bottom-0 border-end-0 border-1 btn-outline-secondary mx-0">
-                      <span class="fs-4 text-center"><iconify-icon icon="akar-icons:arrow-cycle"></iconify-icon></span>
+                      <span class="fs-4 text-center"><iconify-icon class="mt-1 pt-1"
+                          icon="akar-icons:arrow-cycle"></iconify-icon></span>
                     </button>
                   </div>
                 </div>
@@ -398,10 +405,12 @@
       <!--Cherry Card 3 -->
       <div class="col-md-3 col-sm-6 mb-4">
         <div class="card h-100 text-center">
-          <div class="badge bg-success text-white position-absolute btn-position">Sale!</div>
-          <img src="imgs/cherry.png" class="card-img-top img-fluid" alt="Organic Cherry">
+          <div class="position-absolute btn-position start-50 ms-5 mt-2 d-none d-md-block">
+            <div class="badge bg-body-tertiary text-success mb-1 px-3 py-3 ms-4">Sale!</div>
+          </div>
+          <img src="./imgs/cherry.png" class="card-img-top img-fluid" alt="Organic Cherry">
           <div class="card-body">
-            <button class="border-0 px-3 py-1 rounded-5">E-Farm</button>
+            <button class="border-0 px-3 py-1 rounded-5 btn-hover">E-Farm</button>
             <p class="mt-5 price fs-5">Organic Cherry</p>
             <p class="card-text text-secondary"><s>$35.50</s> <span class="price fs-5">$15.45</span></p>
             <div class="container">
@@ -411,11 +420,11 @@
                     <button
                       class="btn border-start-0 border-top-0 border-bottom-0 border-end border-1 btn-outline-secondary mx-0"
                       onclick="addToCart(products[2])">
-                      <span class="fs-4"><iconify-icon icon="bytesize:cart"></iconify-icon></span>
+                      <span class="fs-4"><iconify-icon class="mt-1 pt-1" icon="bytesize:cart"></iconify-icon></span>
                     </button>
                     <button
                       class="btn border-start border-top-0 border-bottom-0 border-end border-1 btn-outline-secondary mx-0">
-                      <span class="fs-4"><iconify-icon icon="mdi-light:eye"></iconify-icon></span>
+                      <span class="fs-4"><iconify-icon class="pt-1" icon="mdi-light:eye"></iconify-icon></span>
                     </button>
                     <button
                       class="btn border-start border-top-0 border-bottom-0 border-end border-1 btn-outline-secondary mx-0">
@@ -423,7 +432,8 @@
                     </button>
                     <button
                       class="btn border-start border-top-0 border-bottom-0 border-end-0 border-1 btn-outline-secondary mx-0">
-                      <span class="fs-4 text-center"><iconify-icon icon="akar-icons:arrow-cycle"></iconify-icon></span>
+                      <span class="fs-4 text-center"><iconify-icon class="mt-1 pt-1"
+                          icon="akar-icons:arrow-cycle"></iconify-icon></span>
                     </button>
                   </div>
                 </div>
@@ -436,10 +446,12 @@
       <!--Lemon Card 4 -->
       <div class="col-md-3 col-sm-6 mb-4">
         <div class="card h-100 text-center">
-          <div class="badge bg-success text-white position-absolute btn-position">Sale!</div>
-          <img src="imgs/lemon.png" class="card-img-top img-fluid" alt="Organic Lemon">
+          <div class="position-absolute btn-position start-50 ms-5 mt-2 d-none d-md-block">
+            <div class="badge bg-body-tertiary text-success mb-1 px-3 py-3 ms-4">Sale!</div>
+          </div>
+          <img src="./imgs/lemon.png" class="card-img-top img-fluid" alt="Organic Lemon">
           <div class="card-body">
-            <button class="rounded-5 border-0 px-3 py-1">N-Farm</button>
+            <button class="rounded-5 border-0 px-3 py-1 btn-hover">N-Farm</button>
             <p class="mt-5 fs-5 price">Organic Lemon</p>
             <p class="card-text text-secondary"><s>$23.55</s> <span class="price fs-5">$19.45</strong></p>
             <div class="container">
@@ -449,11 +461,11 @@
                     <button
                       class="btn border-start-0 border-top-0 border-bottom-0 border-end border-1 btn-outline-secondary mx-0"
                       onclick="addToCart(products[3])">
-                      <span class="fs-4"><iconify-icon icon="bytesize:cart"></iconify-icon></span>
+                      <span class="fs-4"><iconify-icon class="pt-2" icon="bytesize:cart"></iconify-icon></span>
                     </button>
                     <button
                       class="btn border-start border-top-0 border-bottom-0 border-end border-1 btn-outline-secondary mx-0">
-                      <span class="fs-4"><iconify-icon icon="mdi-light:eye"></iconify-icon></span>
+                      <span class="fs-4"><iconify-icon class="pt-1" icon="mdi-light:eye"></iconify-icon></span>
                     </button>
                     <button
                       class="btn border-start border-top-0 border-bottom-0 border-end border-1 btn-outline-secondary mx-0">
@@ -461,7 +473,8 @@
                     </button>
                     <button
                       class="btn border-start border-top-0 border-bottom-0 border-end-0 border-1 btn-outline-secondary mx-0">
-                      <span class="fs-4 text-center"><iconify-icon icon="akar-icons:arrow-cycle"></iconify-icon></span>
+                      <span class="fs-4 text-center"><iconify-icon class="mt-1 pt-1"
+                          icon="akar-icons:arrow-cycle"></iconify-icon></span>
                     </button>
                   </div>
                 </div>
@@ -478,10 +491,12 @@
     <div class="row">
       <div class="col-md-3 col-sm-6 mb-4">
         <div class="card h-100 text-center">
-          <div class="badge bg-info text-white position-absolute btn-position">Best</div>
-          <img src="imgs/tomoato.png" class="card-img-top img-fluid" alt="Organic Tomato">
+          <div class="position-absolute btn-position start-50 ms-5 mt-2 d-none d-md-block">
+            <div class="badge bg-body-tertiary text-success mb-1 px-3 py-3 ms-4">Sale!</div>
+          </div>
+          <img src="./imgs/tomoato.png" class="card-img-top img-fluid" alt="Organic Tomato">
           <div class="card-body">
-            <button class="border-0 px-3 py-1 rounded-5">H-Life</button>
+            <button class="border-0 px-3 py-1 rounded-5 btn-hover">H-Life</button>
             <p class="mt-5 fs-5 price">Organic Tomato</p>
             <p class="card-text text-secondary"><s>$14.40</s> <span class="fs-5 price">$12.40</span></p>
             <div class="container">
@@ -491,11 +506,11 @@
                     <button
                       class="btn border-start-0 border-top-0 border-bottom-0 border-end border-1 btn-outline-secondary mx-0"
                       onclick="addToCart(products[4])">
-                      <span class="fs-4"><iconify-icon icon="bytesize:cart"></iconify-icon></span>
+                      <span class="fs-4"><iconify-icon class="pt-2" icon="bytesize:cart"></iconify-icon></span>
                     </button>
                     <button
                       class="btn border-start border-top-0 border-bottom-0 border-end border-1 btn-outline-secondary mx-0">
-                      <span class="fs-4"><iconify-icon icon="mdi-light:eye"></iconify-icon></span>
+                      <span class="fs-4"><iconify-icon class="pt-1" icon="mdi-light:eye"></iconify-icon></span>
                     </button>
                     <button
                       class="btn border-start border-top-0 border-bottom-0 border-end border-1 btn-outline-secondary mx-0"
@@ -504,7 +519,8 @@
                     </button>
                     <button
                       class="btn border-start border-top-0 border-bottom-0 border-end-0 border-1 btn-outline-secondary mx-0">
-                      <span class="fs-4 text-center"><iconify-icon icon="akar-icons:arrow-cycle"></iconify-icon></span>
+                      <span class="fs-4 text-center"><iconify-icon class="pt-1 mt-1"
+                          icon="akar-icons:arrow-cycle"></iconify-icon></span>
                     </button>
                   </div>
                 </div>
@@ -514,13 +530,15 @@
         </div>
       </div>
 
-      <!--Lettuc Card 2 -->
+      <!--Lettuce Card 2 -->
       <div class="col-md-3 col-sm-6 mb-4">
         <div class="card h-100 text-center">
-          <div class="badge bg-success text-white position-absolute btn-position">Sale!</div>
-          <img src="imgs/lettuc.png" class="card-img-top img-fluid" alt="Organic Lettue">
+          <div class="position-absolute btn-position start-50 ms-5 mt-2 d-none d-md-block">
+            <div class="badge bg-body-tertiary text-success mb-1 px-3 py-3 ms-4">Sale!</div>
+          </div>
+          <img src="./imgs/lettuc.png" class="card-img-top img-fluid" alt="Organic Lettuce">
           <div class="card-body">
-            <button class="border-0 px-3 py-1 rounded-5">Farmer</button>
+            <button class="border-0 px-3 py-1 rounded-5 btn-hover">Farmer</button>
             <p class="mt-5 fs-5 price">Organic Lettuce</p>
             <p class="card-text text-secondary"><s>$14.40</s><span class="fs-5 price">$12.40</span></p>
             <div class="container">
@@ -530,11 +548,11 @@
                     <button
                       class="btn border-start-0 border-top-0 border-bottom-0 border-end border-1 btn-outline-secondary mx-0"
                       onclick="addToCart(products[5])">
-                      <span class="fs-4"><iconify-icon icon="bytesize:cart"></iconify-icon></span>
+                      <span class="fs-4"><iconify-icon class="pt-2" icon="bytesize:cart"></iconify-icon></span>
                     </button>
                     <button
                       class="btn border-start border-top-0 border-bottom-0 border-end border-1 btn-outline-secondary mx-0">
-                      <span class="fs-4"><iconify-icon icon="mdi-light:eye"></iconify-icon></span>
+                      <span class="fs-4"><iconify-icon class="pt-1" icon="mdi-light:eye"></iconify-icon></span>
                     </button>
                     <button
                       class="btn border-start border-top-0 border-bottom-0 border-end border-1 btn-outline-secondary mx-0">
@@ -542,7 +560,8 @@
                     </button>
                     <button
                       class="btn border-start border-top-0 border-bottom-0 border-end-0 border-1 btn-outline-secondary mx-0">
-                      <span class="fs-4 text-center"><iconify-icon icon="akar-icons:arrow-cycle"></iconify-icon></span>
+                      <span class="fs-4 text-center"><iconify-icon class="pt-1 mt-1"
+                          icon="akar-icons:arrow-cycle"></iconify-icon></span>
                     </button>
                   </div>
                 </div>
@@ -555,11 +574,13 @@
       <!--Potato Card 3 -->
       <div class="col-md-3 col-sm-6 mb-4">
         <div class="card h-100 text-center">
-          <div class="badge bg-success text-white position-absolute btn-position">Sale!</div>
-          <img src="imgs/potato.png" class="card-img-top img-fluid" alt="Organic Potato">
+          <div class="position-absolute btn-position start-50 ms-5 mt-2 d-none d-md-block">
+            <div class="badge bg-primary text-white py-3 px-4 mb-1 ms-4">KG</div>
+          </div>
+          <img src="./imgs/potato.png" class="card-img-top img-fluid" alt="Organic Potato">
           <div class="card-body">
-            <button class="border-0 px-3 py-1 rounded-5">N-Farm</button>
-            <p class="mt-5 fs-5 price">Organic Patato</p>
+            <button class="border-0 px-3 py-1 rounded-5 btn-hover">N-Farm</button>
+            <p class="mt-5 fs-5 price">Organic Potato</p>
             <p class="text-secondary"><span class="fs-5 price">$14.40</span></p>
             <div class="container">
               <div class="row justify-content-center">
@@ -568,11 +589,11 @@
                     <button
                       class="btn border-start-0 border-top-0 border-bottom-0 border-end border-1 btn-outline-secondary mx-0"
                       onclick="addToCart(products[6])">
-                      <span class="fs-4"><iconify-icon icon="bytesize:cart"></iconify-icon></span>
+                      <span class="fs-4"><iconify-icon class="pt-2" icon="bytesize:cart"></iconify-icon></span>
                     </button>
                     <button
                       class="btn border-start border-top-0 border-bottom-0 border-end border-1 btn-outline-secondary mx-0">
-                      <span class="fs-4"><iconify-icon icon="mdi-light:eye"></iconify-icon></span>
+                      <span class="fs-4"><iconify-icon class="pt-1" icon="mdi-light:eye"></iconify-icon></span>
                     </button>
                     <button
                       class="btn border-start border-top-0 border-bottom-0 border-end border-1 btn-outline-secondary mx-0">
@@ -580,7 +601,8 @@
                     </button>
                     <button
                       class="btn border-start border-top-0 border-bottom-0 border-end-0 border-1 btn-outline-secondary mx-0">
-                      <span class="fs-4 text-center"><iconify-icon icon="akar-icons:arrow-cycle"></iconify-icon></span>
+                      <span class="fs-4 text-center"><iconify-icon class="pt-1 mt-1"
+                          icon="akar-icons:arrow-cycle"></iconify-icon></span>
                     </button>
                   </div>
                 </div>
@@ -593,10 +615,12 @@
       <!--Mashroom Card 4 -->
       <div class="col-md-3 col-sm-6 mb-4">
         <div class="card h-100 text-center">
-          <div class="badge bg-success text-white position-absolute btn-position">Sale!</div>
-          <img src="imgs/mashroom.png" class="card-img-top img-fluid" alt="Organic Mashroom">
+          <div class="position-absolute btn-position start-50 ms-5 mt-2 d-none d-md-block">
+            <div class="badge bg-body-tertiary text-success mb-1 px-3 py-3 ms-4">Sale!</div>
+          </div>
+          <img src="./imgs/mashroom.png" class="card-img-top img-fluid" alt="Organic Mashroom">
           <div class="card-body">
-            <button class="rounded-5 border-0 px-3 py-1">E-Farm</button>
+            <button class="rounded-5 border-0 px-3 py-1 btn-hover">E-Farm</button>
             <p class="mt-5 fs-5 price">Organic Mushroom</p>
             <p class="card-text text-secondary"><s>$14.40</s> <span class="price fs-5">$12.40</span></p>
             <div class="container">
@@ -606,11 +630,11 @@
                     <button
                       class="btn border-start-0 border-top-0 border-bottom-0 border-end border-1 btn-outline-secondary mx-0"
                       onclick="addToCart(products[7])">
-                      <span class="fs-4"><iconify-icon icon="bytesize:cart"></iconify-icon></span>
+                      <span class="fs-4"><iconify-icon class="pt-2" icon="bytesize:cart"></iconify-icon></span>
                     </button>
                     <button
                       class="btn border-start border-top-0 border-bottom-0 border-end border-1 btn-outline-secondary mx-0">
-                      <span class="fs-4"><iconify-icon icon="mdi-light:eye"></iconify-icon></span>
+                      <span class="fs-4"><iconify-icon class="pt-1" icon="mdi-light:eye"></iconify-icon></span>
                     </button>
                     <button
                       class="btn border-start border-top-0 border-bottom-0 border-end border-1 btn-outline-secondary mx-0">
@@ -618,7 +642,8 @@
                     </button>
                     <button
                       class="btn border-start border-top-0 border-bottom-0 border-end-0 border-1 btn-outline-secondary mx-0">
-                      <span class="fs-4 text-center"><iconify-icon icon="akar-icons:arrow-cycle"></iconify-icon></span>
+                      <span class="fs-4 text-center"><iconify-icon class="pt-2"
+                          icon="akar-icons:arrow-cycle"></iconify-icon></span>
                     </button>
                   </div>
                 </div>
@@ -635,10 +660,12 @@
     <div class="row">
       <div class="col-md-3 col-sm-6 mb-4">
         <div class="card h-100 text-center">
-          <div class="badge bg-info text-white position-absolute btn-position">Best</div>
-          <img src="imgs/banana.png" class="card-img-top img-fluid" alt="Organic banana">
+          <div class="position-absolute btn-position start-50 ms-5 mt-2 d-none d-md-block">
+            <div class="badge bg-body-tertiary text-success mb-1 px-3 py-3 ms-4">Sale!</div>
+          </div>
+          <img src="./imgs/banana.png" class="card-img-top img-fluid" alt="Organic banana">
           <div class="card-body">
-            <button class="border-0 px-3 py-1 rounded-5">E-Farm</button>
+            <button class="border-0 px-3 py-1 rounded-5 btn-hover">E-Farm</button>
             <p class="mt-5 fs-5 price">Organic Banana</p>
             <p class="card-text text-secondary"><s>$14.40</s> <span class="fs-5 price">$12.40</span></p>
             <div class="container">
@@ -648,11 +675,11 @@
                     <button
                       class="btn border-start-0 border-top-0 border-bottom-0 border-end border-1 btn-outline-secondary mx-0"
                       onclick="addToCart(products[8])">
-                      <span class="fs-4"><iconify-icon icon="bytesize:cart"></iconify-icon></span>
+                      <span class="fs-4"><iconify-icon class="pt-2" icon="bytesize:cart"></iconify-icon></span>
                     </button>
                     <button
                       class="btn border-start border-top-0 border-bottom-0 border-end border-1 btn-outline-secondary mx-0">
-                      <span class="fs-4"><iconify-icon icon="mdi-light:eye"></iconify-icon></span>
+                      <span class="fs-4"><iconify-icon class="pt-1" icon="mdi-light:eye"></iconify-icon></span>
                     </button>
                     <button
                       class="btn border-start border-top-0 border-bottom-0 border-end border-1 btn-outline-secondary mx-0">
@@ -660,7 +687,8 @@
                     </button>
                     <button
                       class="btn border-start border-top-0 border-bottom-0 border-end-0 border-1 btn-outline-secondary mx-0">
-                      <span class="fs-4 text-center"><iconify-icon icon="akar-icons:arrow-cycle"></iconify-icon></span>
+                      <span class="fs-4 text-center"><iconify-icon class="pt-1 mt-1"
+                          icon="akar-icons:arrow-cycle"></iconify-icon></span>
                     </button>
                   </div>
                 </div>
@@ -673,10 +701,12 @@
       <!--Bean Card 2 -->
       <div class="col-md-3 col-sm-6 mb-4">
         <div class="card h-100 text-center">
-          <div class="badge bg-success text-white position-absolute btn-position">Sale!</div>
-          <img src="imgs/bean.png" class="card-img-top img-fluid" alt="Organic Bean">
+          <div class="position-absolute btn-position start-50 ms-5 mt-2 d-none d-md-block">
+            <div class="badge bg-body-tertiary text-success mb-1 px-3 py-3 ms-4">Sale!</div>
+          </div>
+          <img src="./imgs/bean.png" class="card-img-top img-fluid" alt="Organic Bean">
           <div class="card-body">
-            <button class="border-0 px-3 py-1 rounded-5">H-Life</button>
+            <button class="border-0 px-3 py-1 rounded-5 btn-hover">H-Life</button>
             <p class="mt-5 fs-5 price">Organic Bean</p>
             <p class="card-text text-secondary"><s>$16.40</s><span class="price fs-5">$14.40</span></p>
             <div class="container">
@@ -686,11 +716,11 @@
                     <button
                       class="btn border-start-0 border-top-0 border-bottom-0 border-end border-1 btn-outline-secondary mx-0"
                       onclick="addToCart(products[9])">
-                      <span class="fs-4"><iconify-icon icon="bytesize:cart"></iconify-icon></span>
+                      <span class="fs-4"><iconify-icon class="pt-2" icon="bytesize:cart"></iconify-icon></span>
                     </button>
                     <button
                       class="btn border-start border-top-0 border-bottom-0 border-end border-1 btn-outline-secondary mx-0">
-                      <span class="fs-4"><iconify-icon icon="mdi-light:eye"></iconify-icon></span>
+                      <span class="fs-4"><iconify-icon class="pt-1" icon="mdi-light:eye"></iconify-icon></span>
                     </button>
                     <button
                       class="btn border-start border-top-0 border-bottom-0 border-end border-1 btn-outline-secondary mx-0">
@@ -698,7 +728,8 @@
                     </button>
                     <button
                       class="btn border-start border-top-0 border-bottom-0 border-end-0 border-1 btn-outline-secondary mx-0">
-                      <span class="fs-4 text-center"><iconify-icon icon="akar-icons:arrow-cycle"></iconify-icon></span>
+                      <span class="fs-4 text-center"><iconify-icon class="pt-1 mt-1"
+                          icon="akar-icons:arrow-cycle"></iconify-icon></span>
                     </button>
                   </div>
                 </div>
@@ -711,10 +742,12 @@
       <!--Carrot Card 3 -->
       <div class="col-md-3 col-sm-6 mb-4">
         <div class="card h-100 text-center">
-          <div class="badge bg-info text-white position-absolute btn-position">Best</div>
-          <img src="imgs/carrot.png" class="card-img-top img-fluid" alt="Organic Carrot">
+          <div class="position-absolute btn-position start-50 ms-5 mt-2 d-none d-md-block">
+            <div class="badge bg-body-tertiary text-success mb-1 px-3 py-3 ms-4">Sale!</div>
+          </div>
+          <img src="./imgs/carrot.png" class="card-img-top img-fluid" alt="Organic Carrot">
           <div class="card-body">
-            <button class="border-0 px-3 py-1 rounded-5">N-Farm</button>
+            <button class="border-0 px-3 py-1 rounded-5 btn-hover">N-Farm</button>
             <p class="mt-5 fs-5 price">Organic Carrot</p>
             <p class="card-text text-secondary"><s>$14.40</s> <span class="price fs-5">$12.40</strong></p>
             <div class="container">
@@ -724,11 +757,11 @@
                     <button
                       class="btn border-start-0 border-top-0 border-bottom-0 border-end border-1 btn-outline-secondary mx-0"
                       onclick="addToCart(products[10])">
-                      <span class="fs-4"><iconify-icon icon="bytesize:cart"></iconify-icon></span>
+                      <span class="fs-4"><iconify-icon class="pt-2" icon="bytesize:cart"></iconify-icon></span>
                     </button>
                     <button
                       class="btn border-start border-top-0 border-bottom-0 border-end border-1 btn-outline-secondary mx-0">
-                      <span class="fs-4"><iconify-icon icon="mdi-light:eye"></iconify-icon></span>
+                      <span class="fs-4"><iconify-icon class="pt-1" icon="mdi-light:eye"></iconify-icon></span>
                     </button>
                     <button
                       class="btn border-start border-top-0 border-bottom-0 border-end border-1 btn-outline-secondary mx-0">
@@ -736,7 +769,8 @@
                     </button>
                     <button
                       class="btn border-start border-top-0 border-bottom-0 border-end-0 border-1 btn-outline-secondary mx-0">
-                      <span class="fs-4 text-center"><iconify-icon icon="akar-icons:arrow-cycle"></iconify-icon></span>
+                      <span class="fs-4 text-center"><iconify-icon class="pt-1 mt-1"
+                          icon="akar-icons:arrow-cycle"></iconify-icon></span>
                     </button>
                   </div>
                 </div>
@@ -749,10 +783,14 @@
       <!--Apple Card 4 -->
       <div class="col-md-3 col-sm-6 mb-4">
         <div class="card h-100 text-center">
-          <div class="badge bg-success text-white position-absolute btn-position">Sale!</div>
-          <img src="imgs/apple.jpg" class="card-img-top img-fluid" alt="Organic Apple">
+          <div class="position-absolute btn-position start-50 ms-5 mt-2 d-none d-md-block">
+            <div class="badge bg-body-tertiary text-success mb-1 px-3 py-3 ms-4">Sale!</div>
+            <div class="badge bg-primary text-white py-3 px-3 mb-1 ms-3">500Gr</div>
+            <div class="badge bg-danger text-white  py-3 px-3 ms-4">13.9%</div>
+          </div>
+          <img src="./imgs/apple.jpg" class="card-img-top img-fluid" alt="Organic Apple">
           <div class="card-body">
-            <button class="rounded-5 border-0 px-3 py-1">E-Farm</button>
+            <button class="rounded-5 border-0 px-3 py-1 btn-hover">E-Farm</button>
             <p class="mt-5 price fs-5">Organic Apple</p>
             <span class="fs-5">
               <iconify-icon icon="twemoji:star"></iconify-icon>
@@ -769,19 +807,20 @@
                     <button
                       class="btn border-start-0 border-top-0 border-bottom-0 border-end border-1 btn-outline-secondary mx-0"
                       onclick="addToCart(products[11])">
-                      <span class="fs-4 mt-5"><iconify-icon icon="bytesize:cart"></iconify-icon></span>
+                      <span class="fs-4 mt-5"><iconify-icon class="pt-2" icon="bytesize:cart"></iconify-icon></span>
                     </button>
                     <button
                       class="btn border-start border-top-0 border-bottom-0 border-end border-1 btn-outline-secondary mx-0">
-                      <span class="fs-4"><iconify-icon icon="mdi-light:eye"></iconify-icon></span>
+                      <span class="fs-4"><iconify-icon class="pt-1" icon="mdi-light:eye"></iconify-icon></span>
                     </button>
                     <button
                       class="btn border-start border-top-0 border-bottom-0 border-end border-1 btn-outline-secondary mx-0">
-                      <span class="fs-4 "><iconify-icon icon="mdi:heart"></iconify-icon></span>
+                      <span class="fs-4 "><iconify-icon class="pt-2" icon="mdi:heart"></iconify-icon></span>
                     </button>
                     <button
                       class="btn border-start border-top-0 border-bottom-0 border-end-0 border-1 btn-outline-secondary mx-0">
-                      <span class="fs-4 text-center"><iconify-icon icon="akar-icons:arrow-cycle"></iconify-icon></span>
+                      <span class="fs-4 text-center"><iconify-icon class="pt-1 mt-1"
+                          icon="akar-icons:arrow-cycle"></iconify-icon></span>
                     </button>
                   </div>
                 </div>
@@ -794,10 +833,10 @@
   </div>
 
   <!-- Testimonials section -->
-  <div class="mt-5 my-5 border-top border-bottom">
+  <div class="mt-5 my-5">
     <div class="container my-5">
       <div class="row justify-content-between align-items-center py-4">
-        <div class="col-md-5">
+        <div class="col-md-5 mb-4 pb-2">
           <h5 class="text-success fs-4">Testimonials</h5>
           <div id="testimonialsCarousel" class="carousel slide mt-4" data-bs-ride="carousel" data-bs-interval="2000">
             <div class="carousel-inner">
@@ -867,14 +906,15 @@
 
   <!-- last section -->
   <div class="container-fluid position-relative py-5">
-    <div class="row align-items-center">
+    <div class="row align-items-center text-center text-lg-start">
       <div class="col-lg-6 col-md-8 col-sm-12 ms-lg-5 mb-3 mb-lg-0">
         <h1 class="text-success fs-1">
-          Get exclusive offers</h1>
+          Get exclusive offers
+        </h1>
         <p class="fs-5 text-secondary">
           Lorem ipsum dolor sit amet, consectetur adipiscing phasellus vestibulum fermentum laoreet.
         </p>
-        <div class="input-group mb-3 w-75">
+        <div class="input-group mb-3 w-75 mx-auto mx-lg-0">
           <input type="text" class="form-control py-2 bg-body-tertiary shadow-none"
             placeholder="Enter your e-mail address ...">
           <button class="btn bg-secondary rounded-end-5 px-4" type="button">
@@ -882,7 +922,7 @@
           </button>
         </div>
       </div>
-      <div class="col-lg-5 col-md-6 col-sm-12 d-flex justify-content-lg-end justify-content-center">
+      <div class="col-lg-5 col-md-6 col-sm-12 d-flex justify-content-center justify-content-lg-end">
         <img src="imgs/bg-3.png" alt="Offers Image" class="img-fluid h-auto" style="max-width: 100%;">
       </div>
     </div>
@@ -894,7 +934,7 @@
       <div class="row ms-2">
         <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
           <div class="d-flex flex-column align-items-start">
-            <img src="imgs/logo.png" alt="Naturally Logo" class="w-50 w-md-25 w-sm-50">
+            <img src="./imgs/logo.png" alt="Naturally Logo" class="w-50 w-md-25 w-sm-50">
             <div>
               <p class="text-secondary mt-3 fs-5">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. Nulla
                 nec nisi ac
@@ -962,6 +1002,7 @@
     </div>
   </footer>
 
+  <!-- Btn -->
   <div class="d-flex justify-content-end me-4 pe-2 py-2 fixed-bottom">
     <button class="btn bg-secondary px-4 rounded-3 py-3" id="sticky-btn">
       <span class="text-white fs-4">

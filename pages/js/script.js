@@ -15,7 +15,6 @@ let products = [
   { name: 'Organic Apple', image: '/imgs/apple.jpg', price: 14.40, quantity: 1 }
 ];
 
-
 function addToCart(product) {
   let existProductIndex = cart.findIndex(item => item.name === product.name);
 
